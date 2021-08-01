@@ -14,7 +14,7 @@ try:
         c.NotebookApp.password = IPython.lib.passwd(passwd)
     else:
         c.NotebookApp.token = 'sujouyu'
-        c.NotebookApp.password = ''
+        c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$8XiGClWSyvg1W/xSHzt/9g$8V+vY3Wb+41VmQnx236ZRA'
 
     ### PostresContentsManager ###
     database_url = os.getenv('DATABASE_URL', None)
