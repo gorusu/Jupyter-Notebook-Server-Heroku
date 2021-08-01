@@ -13,7 +13,7 @@ try:
         passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
         c.NotebookApp.password = IPython.lib.passwd(passwd)
     else:
-        c.NotebookApp.token = ''
+        c.NotebookApp.token = 'sujouyu'
         c.NotebookApp.password = ''
 
     ### PostresContentsManager ###
